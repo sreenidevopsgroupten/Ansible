@@ -1,0 +1,8 @@
+---
+- name: This play is used to archive a folder
+  hosts: localhost
+  tasks:
+  - name: archive's a folder to a zip file
+    archive:
+      path: /home/ubuntu/playbooks
+      dest: /home/ubuntu/playbooks.zip

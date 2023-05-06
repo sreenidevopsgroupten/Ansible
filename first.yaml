@@ -1,0 +1,8 @@
+---
+- name: This play is used to install tree software.
+  hosts: localhost
+  tasks:
+  - name: Install tree
+    apt:
+      name: tree
+      state: absent

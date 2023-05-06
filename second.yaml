@@ -1,0 +1,8 @@
+---
+- name:  This is the second play to create a file/directory
+  hosts: localhost
+  tasks:
+  - name: folder creation
+    file:
+      path: /home/ubuntu/directory_from_playbook
+      state: absent

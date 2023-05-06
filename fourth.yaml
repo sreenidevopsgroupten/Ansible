@@ -1,0 +1,8 @@
+---
+- name: This play is used to download a package from Internet
+  hosts: localhost
+  tasks:
+  - name: tomcat downloas
+    get_url:
+      url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.74/bin/apache-tomcat-9.0.74.zip
+      dest: /home/ubuntu
