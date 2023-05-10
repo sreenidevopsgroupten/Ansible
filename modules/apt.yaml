@@ -1,0 +1,24 @@
+---
+- name: This play is used to install tree software.
+  hosts: localhost
+  tasks:
+  - name: Install tree
+    apt:
+      name: tree
+      state: present
+  - name: Install zip
+    apt:
+      name: zip
+      state: present
+- name: This play is used to Uninstall tree & zip Softwares
+  hosts: localhost
+  tasks:
+  - name: Uninstall Tree
+    apt:
+      name: tree
+      state: absent
+  - name: Uninstall zip
+    apt:
+      name: zip
+      state: absent
+

@@ -1,0 +1,20 @@
+---
+- name: first play
+  hosts: localhost
+  vars:
+    package_one: zip
+    package_two: tree
+    package_three: net-tools
+  tasks:
+  - name: install any software
+    apt:
+      name: '{{ package_one }}'
+      state: present
+  - name: install any software two
+    apt:
+      name: '{{ package_two }}'  
+      state: present
+  - name: install any software three
+    apt: 
+      name: '{{ package_three }}'
+      state: present

@@ -1,0 +1,9 @@
+---
+- name: first play
+  hosts: localhost
+  tasks:
+  - name: replace a string in a file
+    replace:
+     path: /home/ubuntu/playbooks/a.txt 
+     regexp: Injection
+     replace: add

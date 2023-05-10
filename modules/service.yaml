@@ -1,0 +1,8 @@
+---
+- name: first play
+  hosts: localhost
+  tasks:
+  - name: start the service
+    service:
+      name: sshd
+      state: started

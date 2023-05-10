@@ -1,0 +1,8 @@
+---
+- name: This is the First play to copy files
+  hosts: localhost
+  tasks:
+  - name: copy a file from one location to another location
+    copy:
+      src: /home/ubuntu/a.sh
+      dest: /tmp

@@ -1,0 +1,10 @@
+---
+- name: This is the first play in this plabook to create a user in  linuc machine.
+  hosts: localhost
+  tasks:
+  - name: user creation
+    user:
+      name: user_one
+      state: present
+      shell: /bin/bash
+      home: /home/user_one

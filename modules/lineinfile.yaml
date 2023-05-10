@@ -1,0 +1,8 @@
+---
+- name: This is the first play in this playbook to add a line in file
+  hosts: localhost
+  tasks:
+  - name: lineinfile module
+    lineinfile:
+      path: /home/ubuntu/playbooks/a.txt
+      line: "Injection is happening from ansible playbook...!"

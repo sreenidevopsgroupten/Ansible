@@ -6,3 +6,10 @@
     archive:
       path: /home/ubuntu/playbooks
       dest: /home/ubuntu/playbooks.zip
+- name: This is  second play to remove zip file.
+  hosts: localhost
+  tasks:
+  - name: remove zip file
+    file:
+      path: /home/ubuntu/playbooks.zip
+      state: absent

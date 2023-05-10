@@ -1,0 +1,12 @@
+---
+- name: first play
+  hosts:
+  - server1
+  - server2
+  become: true
+  tasks:
+  - name: first task
+    apt:
+      name: tree
+      state: present
+      update_cache: yes

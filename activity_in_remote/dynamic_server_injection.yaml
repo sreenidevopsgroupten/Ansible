@@ -1,0 +1,13 @@
+---
+- name: This play is used to pass remote enteries synamically from command line
+  hosts: '{{ server_name }}'
+  become: true
+  vars:
+    server_name: all
+    state: present
+  tasks:
+  - name: first task
+    apt: 
+      name: zip
+      state: '{{ state }}'
+      update_cache: yes
