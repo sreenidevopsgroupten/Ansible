@@ -1,5 +1,5 @@
 ---
-- name: This play is used to pass remote enteries synamically from command line
+- name: This play is used to pass remote enteries dynamically from command line
   hosts: '{{ server_name }}'
   become: true
   vars:
